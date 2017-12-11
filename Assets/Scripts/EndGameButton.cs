@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGameButton : MonoBehaviour, IActivatable
 {     
@@ -11,7 +12,7 @@ public class EndGameButton : MonoBehaviour, IActivatable
 
         public void DoActivate()
         {
-            // need to add using UnityEngine.UI;
-            
+        // need to add using UnityEngine.UI;
+        SceneManager.LoadScene("End_Screen");
         }    
 }
